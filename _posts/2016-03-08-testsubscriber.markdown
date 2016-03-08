@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Notes on TestSubscriber"
+title:  "Notes on Rx Tests"
 date:   2016-03-08 09:00:00
-description: Something I discoverd while TDD-ing a RxJava App
+description: Something I discovered while TDD-ing a RxJava App
 categories:
 - tests
 - rx
 permalink: testsubscriber
 ---
-While trying to test-drive a RxJava App in kotlin, I ran into some problems. 
+While trying to test-drive a RxJava app in Kotlin, I ran into some problems. 
 Here are my notes on that topic.
 
 #### I
@@ -34,7 +34,7 @@ So the `TestScheduler` doesn't not mean "blocking" or "on the same thread" as th
 
 #### II
 
-I shouldn't forget that (in Kotlin) the `subscibe` method that takes a lambda 
+I shouldn't forget that (in Kotlin) the `subscribe` method that takes a lambda 
 
 ```kotlin
 DataSource().subscribe {
@@ -43,7 +43,7 @@ DataSource().subscribe {
 ````
 
 is only for lambdas - and not for instances of Subscriber. 
-This seems obvious, but it happens that while changing things from one concept to the other I might accidently keep the '{}' brakets.
+This seems obvious, but it happens that while changing things from one concept to the other I might accidently keep the `{}` brackets.
 
 
 #### III
