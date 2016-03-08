@@ -7,6 +7,7 @@ categories:
 - tests
 permalink: testsubscriber
 ---
+
 ####I
 
 When using the [RxJava TestSubscriber](http://reactivex.io/RxJava/javadoc/rx/observers/TestSubscriber.html) to test Observables, I have to make sure that I don't use `subscribeOn` or `observeOn`.
@@ -35,5 +36,6 @@ This seems obvious, but it happens that while changing things from one concept t
 ####III
 
 Good recources on Testing Rx:
+
 - http://fedepaol.github.io/blog/2015/09/13/testing-rxjava-observables-subscriptions/
 - http://reactivex.io/RxJava/javadoc/rx/observers/TestSubscriber.html
