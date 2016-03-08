@@ -5,7 +5,6 @@ date:   2016-03-08 09:00:00
 description: Something I discoverd while TDD-ing a RxJava App
 categories:
 - tests
-- rx
 permalink: testsubscriber
 ---
 ####I
