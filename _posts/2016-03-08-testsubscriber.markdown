@@ -11,7 +11,7 @@ permalink: testsubscriber
 While trying to test-drive a RxJava app in Kotlin, I ran into some problems. 
 Here are my notes on that topic.
 
-#### I
+#### 1
 
 When using the [RxJava TestSubscriber](http://reactivex.io/RxJava/javadoc/rx/observers/TestSubscriber.html) to test Observables, I have to make sure that I don't use `subscribeOn` or `observeOn` (RxJava version `1.1.0` introduced many methods that make the TestSubscriber actually pretty useful).
 
@@ -32,7 +32,7 @@ The [documentation](http://reactivex.io/RxJava/javadoc/rx/schedulers/Schedulers.
 So the `TestScheduler` doesn't not mean "blocking" or "on the same thread" as the rest, it just means I could manually advance the clock.
 
 
-#### II
+#### 2
 
 I shouldn't forget that (in Kotlin) the `subscribe` method that takes a lambda 
 
@@ -46,7 +46,7 @@ is only for lambdas - and not for instances of Subscriber.
 This seems obvious, but it happens that while changing things from one concept to the other I might accidently keep the `{}` brackets.
 
 
-#### III
+#### 3
 
 Good recources on Testing Rx:
 
