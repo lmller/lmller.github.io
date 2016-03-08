@@ -33,7 +33,8 @@ So the `TestScheduler` doesn't mean "blocking" or "on the same thread" as the re
 
 Good guy [David Karnok](https://twitter.com/akarnokd) helped me understanding the TestScheduler on twitter:
 
-{% tweet https://twitter.com/akarnokd/status/707233438672281600 %}
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="de"><p lang="en" dir="ltr"><a href="https://twitter.com/lovisbrot">@lovisbrot</a> Use ts.awaitTerminalEvent before asserting; store test() and call advanceTimeBy to make time move forward.</p>&mdash; David Karnok (@akarnokd) <a href="https://twitter.com/akarnokd/status/707233438672281600">8. März 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 #### 2
 
