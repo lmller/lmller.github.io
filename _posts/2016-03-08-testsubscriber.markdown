@@ -24,14 +24,16 @@ testSubscriber.assertValueCount(42)
 ```
 
 Will not work even though the `Schedulers.test()` looks like its made for... tests.
-The documentation is not clear on that it simply says: 
+The [documentation](http://reactivex.io/RxJava/javadoc/rx/schedulers/Schedulers.html#test()) is not clear on that it simply says: 
 
 > Creates and returns a TestScheduler, which is useful for debugging. 
 > It allows you to test schedules of events by manually advancing the clock at whatever pace you choose.
-And
+
+And for the [TestScheduler](http://reactivex.io/RxJava/javadoc/rx/schedulers/TestScheduler.html)
+
 > The TestScheduler is useful for debugging. It allows you to test schedules of events by manually advancing the clock at whatever pace you choose.
 
-So the `TestScheduler` does not mean it's blocking or on the same thread as the rest, it just means I could manually advance the clock.
+So the `TestScheduler` doesn't not mean "blocking" or "on the same thread" as the rest, it just means I could manually advance the clock.
 
 #### II
 
