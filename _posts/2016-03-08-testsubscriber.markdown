@@ -23,13 +23,13 @@ DataSource().subscribeOn(Schedulers.test())
 testSubscriber.assertValueCount(42)
 ```
 
-Will not work even though the `Schedulers.test()` looks like its made for... tests.
+Will not work even though the `Schedulers.test()` looks like it's made for... tests.
 The [documentation](http://reactivex.io/RxJava/javadoc/rx/schedulers/Schedulers.html#test()) is not clear on that it simply says: 
 
 > Creates and returns a TestScheduler, which is useful for debugging. 
 > It allows you to test schedules of events by manually advancing the clock at whatever pace you choose.
 
-So the `TestScheduler` doesn't not mean "blocking" or "on the same thread" as the rest, it just means I could manually advance the clock.
+So the `TestScheduler` doesn't mean "blocking" or "on the same thread" as the rest, it just means I could manually advance the clock.
 
 
 #### 2
