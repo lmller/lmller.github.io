@@ -5,8 +5,11 @@ date:   2016-03-08 09:00:00
 description: Something I discoverd while TDD-ing a RxJava App
 categories:
 - tests
+- rx
 permalink: testsubscriber
 ---
+While trying to test-drive a RxJava App in kotlin, I ran into some problems. 
+Here are my notes on that topic.
 
 #### I
 
