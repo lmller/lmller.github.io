@@ -31,6 +31,9 @@ The [documentation](http://reactivex.io/RxJava/javadoc/rx/schedulers/Schedulers.
 
 So the `TestScheduler` doesn't mean "blocking" or "on the same thread" as the rest, it just means I could manually advance the clock.
 
+Good guy [David Karnok](https://twitter.com/akarnokd) helped me understanding the TestScheduler on twitter:
+
+{% tweet https://twitter.com/akarnokd/status/707233438672281600 %}
 
 #### 2
 
