@@ -567,7 +567,7 @@ pre {
     padding: 0;
     font-size: 100%;
     color: inherit;
-    background-color: rgba($base-08, .1);
+    background-color: transparent;
   }
 
   @include MQ(M) {
