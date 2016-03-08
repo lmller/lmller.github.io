@@ -29,10 +29,6 @@ The [documentation](http://reactivex.io/RxJava/javadoc/rx/schedulers/Schedulers.
 > Creates and returns a TestScheduler, which is useful for debugging. 
 > It allows you to test schedules of events by manually advancing the clock at whatever pace you choose.
 
-And for the [`TestScheduler`](http://reactivex.io/RxJava/javadoc/rx/schedulers/TestScheduler.html):
-
-> The TestScheduler is useful for debugging. It allows you to test schedules of events by manually advancing the clock at whatever pace you choose.
-
 So the `TestScheduler` doesn't not mean "blocking" or "on the same thread" as the rest, it just means I could manually advance the clock.
 
 
@@ -56,3 +52,4 @@ Good recources on Testing Rx:
 
 - <http://fedepaol.github.io/blog/2015/09/13/testing-rxjava-observables-subscriptions/>
 - <http://reactivex.io/RxJava/javadoc/rx/observers/TestSubscriber.html>
+- <http://reactivex.io/RxJava/javadoc/rx/schedulers/TestScheduler.html>
