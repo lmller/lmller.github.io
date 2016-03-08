@@ -29,11 +29,12 @@ The [documentation](http://reactivex.io/RxJava/javadoc/rx/schedulers/Schedulers.
 > Creates and returns a TestScheduler, which is useful for debugging. 
 > It allows you to test schedules of events by manually advancing the clock at whatever pace you choose.
 
-And for the [TestScheduler](http://reactivex.io/RxJava/javadoc/rx/schedulers/TestScheduler.html)
+And for the [`TestScheduler`](http://reactivex.io/RxJava/javadoc/rx/schedulers/TestScheduler.html):
 
 > The TestScheduler is useful for debugging. It allows you to test schedules of events by manually advancing the clock at whatever pace you choose.
 
 So the `TestScheduler` doesn't not mean "blocking" or "on the same thread" as the rest, it just means I could manually advance the clock.
+
 
 #### II
 
@@ -41,12 +42,13 @@ I shouldn't forget that (in Kotlin) the `subscibe` method that takes a lambda
 
 ````
 DataSource().subscribe {
-    //do lambda stuff
+    //do things
 }
 ````
 
 is only for lambdas - and not for instances of Subscriber. 
 This seems obvious, but it happens that while changing things from one concept to the other I might accidently keep the '{}' brakets.
+
 
 #### III
 
