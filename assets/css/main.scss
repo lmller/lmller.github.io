@@ -164,7 +164,7 @@ a.default-anchor {
 
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  color: #3DAEFF;
+  color: $base-08;
   &:hover, &:active, &:focus {
     @include transition(border-bottom-color .2s);
     border-bottom-color: $base-08;
@@ -547,7 +547,7 @@ code, pre {
 code {
   padding: .25em .5em;
   font-size: 85%;
-  color: $base-08;
+  color: #bbbbbb;
   background-color: rgba($base-08, .1);
 }
 pre {
