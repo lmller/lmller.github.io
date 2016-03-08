@@ -13,9 +13,9 @@ Here are my notes on that topic.
 
 #### I
 
-When using the [RxJava TestSubscriber](http://reactivex.io/RxJava/javadoc/rx/observers/TestSubscriber.html) to test Observables, I have to make sure that I don't use `subscribeOn` or `observeOn`.
+When using the [RxJava TestSubscriber](http://reactivex.io/RxJava/javadoc/rx/observers/TestSubscriber.html) to test Observables, I have to make sure that I don't use `subscribeOn` or `observeOn` (RxJava version `1.1.0` introduced many methods that make the TestSubscriber actually pretty useful).
 
-```
+```kotlin
 val testSubscriber = TestSubscriber<ThingsIWant>()
 DataSource().subscribeOn(Schedulers.test())
             .subscribe(testSubscriber)
@@ -23,9 +23,15 @@ DataSource().subscribeOn(Schedulers.test())
 testSubscriber.assertValueCount(42)
 ```
 
-Will not work (although the `Schedulers.test()`) 
+Will not work even though the `Schedulers.test()` looks like its made for... tests.
+The documentation is not clear on that it simply says: 
 
-Also, for the `TestSubscribers` to have more useful methods, I should always use Rx version `1.1.0` and above.
+> Creates and returns a TestScheduler, which is useful for debugging. 
+> It allows you to test schedules of events by manually advancing the clock at whatever pace you choose.
+And
+> The TestScheduler is useful for debugging. It allows you to test schedules of events by manually advancing the clock at whatever pace you choose.
+
+So the `TestScheduler` does not mean it's blocking or on the same thread as the rest, it just means I could manually advance the clock.
 
 #### II
 
