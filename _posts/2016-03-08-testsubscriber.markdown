@@ -54,5 +54,5 @@ This seems obvious, but it happens that while changing things from one concept t
 
 Good recources on Testing Rx:
 
-- http://fedepaol.github.io/blog/2015/09/13/testing-rxjava-observables-subscriptions/
-- http://reactivex.io/RxJava/javadoc/rx/observers/TestSubscriber.html
+- <http://fedepaol.github.io/blog/2015/09/13/testing-rxjava-observables-subscriptions/>
+- <http://reactivex.io/RxJava/javadoc/rx/observers/TestSubscriber.html>
