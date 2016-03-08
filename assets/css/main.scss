@@ -16,7 +16,7 @@
 // Import syntax
 @import "partials/syntax";
 
-
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
 
 /* --------------------------------
 
@@ -542,7 +542,7 @@ Code snippets
 
 --------------------------------- */
 code, pre {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-family: "Source Code Pro", Menlo, Monaco, "Courier New", monospace;
 }
 code {
   padding: .25em .5em;
