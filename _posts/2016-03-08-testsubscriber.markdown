@@ -36,7 +36,7 @@ So the `TestScheduler` doesn't not mean "blocking" or "on the same thread" as th
 
 I shouldn't forget that (in Kotlin) the `subscibe` method that takes a lambda 
 
-````
+```kotlin
 DataSource().subscribe {
     //do things
 }
