@@ -3,6 +3,7 @@ layout: post
 title:  "We have no Idea what we're doing"
 date:   2016-01-21 22:00:00
 description: Three videos every Developer should watch.
+comments: true
 categories:
 - recommendations
 permalink: dont-know-how
