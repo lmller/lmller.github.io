@@ -21,7 +21,8 @@ But we build our Apps using Gradle and the Gradle Android plugin, so we do not h
 The Android Gradle plugin uses the default `JavaCompile` task that is shipped with Gradle. We can therefore regain control of the compiler options.
 
 An easy way of applying flags like `-Xmaxerrs` is to use Gradle's `afterEvaluate` [lifecycle callback](https://docs.gradle.org/current/userguide/build_lifecycle.html#sec:project_evaluation):
-> You can receive a notification immediately before and after a project is evaluated. This can be used to do things like performing additional configuration once all the definitions in a build script have been applied, or for some custom logging or profiling.
+
+>>> You can receive a notification immediately before and after a project is evaluated. This can be used to do things like performing additional configuration once all the definitions in a build script have been applied, or for some custom logging or profiling.
 
 Sounds perfect.  
 Now, the task we need to configure is `JavaCompile`, and we want to set the compiler arguments of this task.  
