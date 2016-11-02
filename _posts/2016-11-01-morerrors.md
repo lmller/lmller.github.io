@@ -31,6 +31,7 @@ The list looks like this:`["-Xmaxerrs", "2000"]`
 In groovy, we can use the left-shift (`<<`) operator to add two elements in a single line.
 
 The result is:
+
 ```
 afterEvaluate {
     tasks.withType(JavaCompile) {
