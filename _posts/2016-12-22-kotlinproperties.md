@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Kotlin Basics: Properties vs. Functions (vs. Properties)"
+title:  "Kotlin Basics: Properties"
 date:   2016-12-22 15:00:00
 description: Kotlin offers different methods to access an object's attribute. Properties, functions or computed properties; which should you choose?
 comments: true
@@ -28,7 +28,8 @@ class Banana {
 }
 ```
 
-On the first glance, they seem equivalent. But they aren't. Kotlin has no fields and `color` can therefore not be accessed directly but will be hidden behind `getColor` and `setColor` methods (so called accessor).   
+On the first glance, they seem equivalent. But they aren't.  
+Kotlin has no fields and `color` can therefore not be accessed directly but will be hidden behind `getColor` and `setColor` methods (so called accessor methods).   
 These methods are generated for us by the Kotlin compiler. But we can write the `getColor` and `setColor` methods ourselves, if we want to.
 
 ```kotlin
