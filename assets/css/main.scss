@@ -150,7 +150,6 @@ hr {
 
 /* bold text */
 strong, b { font-weight: 600; }
-
 /* italic */
 em, i { font-style: italic; }
 /* --------------------------------
@@ -547,7 +546,7 @@ code, pre {
   font-family: "Source Code Pro", Menlo, Monaco, "Courier New", monospace;
 }
 code {
-  padding: .25em .5em;
+  padding: .2em .2em;
   font-size: 85%;
   color: #665555;
   background-color: rgba($base-08, .1);
