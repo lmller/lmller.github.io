@@ -16,7 +16,8 @@
 // Import syntax
 @import "partials/syntax";
 
-
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 /* --------------------------------
 
@@ -149,7 +150,6 @@ hr {
 
 /* bold text */
 strong, b { font-weight: 600; }
-
 /* italic */
 em, i { font-style: italic; }
 /* --------------------------------
@@ -178,6 +178,7 @@ div.default-page-content {
 
 body {
   color: $color-2;
+  background-color: #fffffd;
 }
 
 a {
@@ -542,12 +543,12 @@ Code snippets
 
 --------------------------------- */
 code, pre {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-family: "Source Code Pro", Menlo, Monaco, "Courier New", monospace;
 }
 code {
-  padding: .25em .5em;
+  padding: .2em .2em;
   font-size: 85%;
-  color: $base-08;
+  color: #665555;
   background-color: rgba($base-08, .1);
 }
 pre {
