@@ -38,7 +38,7 @@ By using an extension function, Kotlin allows us to call the `isNumeric` method 
 
 ```kotlin
 fun String.isNumeric(): Boolean {
-  return this.matches("\\d+")
+  return this.matches("\\d+".toRegex())
 }
 ...
 
@@ -201,14 +201,15 @@ Those two methods are the functional equivalent to the `filter` function to coll
 
 ###### Summary
 
-Function  | Argument  |  Returns | use when
+Function  | Argument  |  Returns | Use when
 --|---|---|
-`run`  | `this` | any result | Rescope, avoid temporary variables
+`run`  | `this` | any result | Re-scope / avoid temporary variables
 `apply`  | `this` | `this` | Builder all the things!
-`let`  | `it` | any result | Rescope, null checks
+`let`  | `it` | any result | Re-scope / null checks
 `also`  | `it` | `this` | You need `apply` but don't want to shadow `this`
 `takeIf`  |`it` | `it` or `null`  | shorthand for `if(predicate(it)) it else null`
 `takeUnless`  | `it` | `it` or `null` | shorthand for `if(!predicate(it)) it else null`
 
 ---
+
 <sup>*</sup> You still can by using `this@FruitBasket`, but do you want to do this?
