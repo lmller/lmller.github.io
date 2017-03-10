@@ -54,7 +54,8 @@ The extension function will always receive an implicit parameter `this`, which i
 
 Let's take a look at Kotlin's standard extension functions.
 
-###### `run`
+
+###### run
 
 ```kotlin
 public inline fun <T, R> T.run(block: T.() -> R): R = block()
@@ -90,7 +91,7 @@ Lambdas in Kotlin implicitly return the result of the last line. That's why I ca
 This way "the things that belong together" stay together.
 It's one line more, I give you that. But it's still less code with less redundancy I had to write.
 
-###### `apply`
+###### apply
 
 ```kotlin
 public inline fun <T> T.apply(block: T.() -> Unit): T { block(); return this }
@@ -121,7 +122,7 @@ class Message(message: String, signature: String) {
 }
 ```
 
-###### `let`
+###### let
 
 ```kotlin
 public inline fun <T, R> T.let(block: (T) -> R): R = block(this)
@@ -149,7 +150,7 @@ appleTree.pick()?.let {
 }
 ```
 
-###### `also`
+###### also
 
 ```kotlin
 public inline fun <T> T.also(block: (T) -> Unit): T { block(this); return this }
@@ -177,7 +178,7 @@ class FruitBasket {
 I renamed the implicit `it` to an explicit `apple` this time.  Assuming the function `appleTree.pick()` returns an apple, the weight of the whole basket increases.  
 Notice that both the apple and the basket have a `weight` property.  If I had used `apply`, it would not be possible<sup>*</sup> to access the basket's `weight`. Since `apply` takes an extension function, `this` would refer to the apple and not the basket.  With `also` this is possible.  
 
-###### `takeIf` and `takeUnless`
+###### takeIf and takeUnless
 
 ```kotlin
 public inline fun <T> T.takeIf(predicate: (T) -> Boolean): T? = if (predicate(this)) this else null
