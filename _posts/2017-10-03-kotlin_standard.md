@@ -52,7 +52,7 @@ Pretty cool, right? You might agree that using extension functions increases the
 The example shows how an extension function is defined. We use the `fun` keyword, followed by the type we want to extend (in this case `String`). Then a `.` and the name of the function. That's it!  
 The extension function will always receive an implicit parameter `this`, which is the object we called the extension function on (in this case, `myString`).
 
-Let's take a look at Kotlin's standard extension functions.
+Let's take a look at Kotlin's standard extension functions.  
 
 
 ###### run
@@ -89,7 +89,8 @@ val password: Password = PasswordGenerator().run {
 
 Lambdas in Kotlin implicitly return the result of the last line. That's why I can omit the temporary variable and store the password directly. Because an extension function is passed to `run` I can also access the password generator's properties like `seed` or `hash` directly.  
 This way "the things that belong together" stay together.
-It's one line more, I give you that. But it's still less code with less redundancy I had to write.
+It's one line more, I give you that. But it's still less code with less redundancy I had to write.  
+
 
 ###### apply
 
@@ -122,6 +123,7 @@ class Message(message: String, signature: String) {
 }
 ```
 
+
 ###### let
 
 ```kotlin
@@ -150,6 +152,7 @@ appleTree.pick()?.let {
 }
 ```
 
+
 ###### also
 
 ```kotlin
@@ -176,7 +179,8 @@ class FruitBasket {
 ```
 
 I renamed the implicit `it` to an explicit `apple` this time.  Assuming the function `appleTree.pick()` returns an apple, the weight of the whole basket increases.  
-Notice that both the apple and the basket have a `weight` property.  If I had used `apply`, it would not be possible<sup>*</sup> to access the basket's `weight`. Since `apply` takes an extension function, `this` would refer to the apple and not the basket.  With `also` this is possible.  
+Notice that both the apple and the basket have a `weight` property.  If I had used `apply`, it would not be possible<sup>*</sup> to access the basket's `weight`. Since `apply` takes an extension function, `this` would refer to the apple and not the basket.  With `also` this is possible.   
+
 
 ###### takeIf and takeUnless
 
@@ -198,7 +202,8 @@ val redApple = apple.takeIf { it.color != RED }
 val otherApple = apple.takeUnless { it.color == RED }
 ```
 
-Those two methods are the functional equivalent to the `filter` function to collections, but they operate on a single variable.
+Those two methods are the functional equivalent to the `filter` function to collections, but they operate on a single variable.  
+
 
 ###### Summary
 
