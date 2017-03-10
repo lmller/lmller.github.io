@@ -57,9 +57,6 @@ Let's take a look at Kotlin's standard extension functions.
 ###### `run`
 
 ```kotlin
-/**
- * Calls the specified function [block] with `this` value as its receiver and returns its result.
- */
 public inline fun <T, R> T.run(block: T.() -> R): R = block()
 ```
 
@@ -96,9 +93,6 @@ It's one line more, I give you that. But it's still less code with less redundan
 ###### `apply`
 
 ```kotlin
-/**
- * Calls the specified function [block] with `this` value as its receiver and returns `this` value.
- */
 public inline fun <T> T.apply(block: T.() -> Unit): T { block(); return this }
 ```
 
@@ -130,9 +124,6 @@ class Message(message: String, signature: String) {
 ###### `let`
 
 ```kotlin
-/**
- * Calls the specified function [block] with `this` value as its argument and returns its result.
- */
 public inline fun <T, R> T.let(block: (T) -> R): R = block(this)
 ```
 
@@ -161,9 +152,6 @@ appleTree.pick()?.let {
 ###### `also`
 
 ```kotlin
-/**
- * Calls the specified function [block] with `this` value as its argument and returns `this` value.
- */
 public inline fun <T> T.also(block: (T) -> Unit): T { block(this); return this }
 ```
 
@@ -192,14 +180,8 @@ Notice that both the apple and the basket have a `weight` property.  If I had us
 ###### `takeIf` and `takeUnless`
 
 ```kotlin
-/**
- * Returns `this` value if it satisfies the given [predicate] or `null`, if it doesn't.
- */
 public inline fun <T> T.takeIf(predicate: (T) -> Boolean): T? = if (predicate(this)) this else null
 
-/**
- * Returns `this` value if it _does not_ satisfy the given [predicate] or `null`, if it does.
- */
 public inline fun <T> T.takeUnless(predicate: (T) -> Boolean): T? = if (!predicate(this)) this else null
 ```
 
