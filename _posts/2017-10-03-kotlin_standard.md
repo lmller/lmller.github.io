@@ -1,4 +1,4 @@
- ---
+---
 layout: post
 title:  "Kotlin Basics: Standard Extension Functions"
 date:   2017-02-08 15:00:00
