@@ -747,10 +747,6 @@ th {
   padding: .25em .5em;
   border: 1px solid $base-04;
 }
-tbody tr:nth-child(odd) td,
-tbody tr:nth-child(odd) th {
-  background-color: $base-05;
-}
 .btn-group a {
   font-size: 14pt;
 }
