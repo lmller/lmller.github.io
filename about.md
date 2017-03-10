@@ -8,7 +8,7 @@ My name Lovis and I'm a Software Developer from Hamburg, Germany.
 
 I work with Android, Java and Kotlin, but I'm also into Game Development with Unity3D.
 
-I have strong opinions on Agile &ndash;and software development practices in general&ndash; as well.
+I have strong opinions on Agile &ndash;and software development practices in general.
 I always try to uncover new ways of thinking and getting things done.
 
 <a href="https://twitter.com/lovisbrot" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @lovisbrot</a>
