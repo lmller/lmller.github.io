@@ -114,7 +114,6 @@ h6 {
   @include MQ(M) {
     @include font-size(19px);
   }
-  margin-top: 4px;
 }
 
 p {
@@ -457,6 +456,7 @@ div.page-content {
 
   h1, h2, h3, h4, h5, h6 {
     padding-bottom: 5px;
+    padding-top: 4px;
   }
 }
 
