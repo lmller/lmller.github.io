@@ -214,7 +214,7 @@ Those two methods are the functional equivalent to the `filter` function to coll
 
 ##### Summary
 
-All extension functions can be used to avoid temporary variables/Re-scope a variable (or the result of a function).  Many of the extension functions in `Standard.kt` can be used interchangeable. Pick the ones that match your style and that has the best readability in your context. 
+All extension functions can be used to avoid temporary variables/Re-scope a variable (or the result of a function).  Many of the extension functions in `Standard.kt` can be used interchangeable. Pick the ones that match your style and that offer the best readability in your context. 
 The table below shows a common usage for each of the presented functions.
 
 Function  | Argument  |  Returns | Usage examples
