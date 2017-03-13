@@ -111,7 +111,20 @@ val password = generator.generate()
 ```
 
 This is particularly useful if you need an object with the same settings more than once.  
-It can also be used to avoid `init{}` blocks during the initialization of a class:
+It can also be used to avoid `init{}` blocks during the initialization of a class.  
+Instead of:
+
+```kotlin
+class Message(message: String, signature: String) {
+  val body = MessageBody()
+  
+  init {
+    body.text = message + "\n" + signature
+  }
+}
+```
+
+You can write:
 
 ```kotlin
 class Message(message: String, signature: String) {
@@ -137,7 +150,7 @@ val result = apple?.let {
 }
 ```
 
-The book (`it`) will only be added to the shelf if it's not `null`.   
+The apple (`it`) will only be added to the basket if it's not `null`.   
 Notice that `let` will return the result of the last line in the lambda (which is the result of `add`).  
 Just like `run`, `let` also helps to keep the scope of your variables small. Instead of `this` you have to use `it` or a custom variable name to reference it:
 
@@ -201,11 +214,14 @@ Those two methods are the functional equivalent to the `filter` function to coll
 
 ##### Summary
 
-Function  | Argument  |  Returns | Use when
+All extension functions can be used to avoid temporary variables/Re-scope a variable (or the result of a function).  Many of the extension functions in `Standard.kt` can be used interchangeable. Pick the ones that match your style and that has the best readability in your context. 
+The table below shows a common usage for each of the presented functions.
+
+Function  | Argument  |  Returns | Usage examples
 --|---|---|
-`run`  | `this` | any result | Re-scope / avoid temporary variables
-`apply`  | `this` | `this` | Builder all the things!
-`let`  | `it` | any result | Re-scope / null checks
+`run`  | `this` | any result | make an object a builder for another object
+`apply`  | `this` | `this` | make an object its own builder
+`let`  | `it` | any result | null checks
 `also`  | `it` | `this` | You need `apply` but don't want to shadow `this`
 `takeIf`  |`it` | `it` or `null`  | shorthand for `if(predicate(it)) it else null`
 `takeUnless`  | `it` | `it` or `null` | shorthand for `if(!predicate(it)) it else null`
