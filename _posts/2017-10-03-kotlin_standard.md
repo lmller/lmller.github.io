@@ -179,7 +179,7 @@ class FruitBasket {
 ```
 
 I renamed the implicit `it` to an explicit `apple` this time.  Assuming the function `appleTree.pick()` returns an apple, the weight of the whole basket increases.  
-Notice that both the apple and the basket have a `weight` property.  If I had used `apply`, it would not be possible<a name="footnote1"><sup>*</sup></a> to access the basket's `weight`. Since `apply` takes an extension function, `this` would refer to the apple and not the basket.  With `also` this is possible.   
+Notice that both the apple and the basket have a `weight` property.  If I had used `apply`, it would not be possible<sup>[*](#footnote1)</sup> to access the basket's `weight`. Since `apply` takes an extension function, `this` would refer to the apple and not the basket.  With `also` this is possible.   
 
 
 ##### takeIf and takeUnless
@@ -218,4 +218,4 @@ Function  | Argument  |  Returns | Use when
 
 ---
 
-<sup>[*](#footnote1)</sup> You still can by using `this@FruitBasket`, but do you want to do this?
+<a name="footnote1"><sup>*</sup></a> You still can by using `this@FruitBasket`, but do you want to do this?
