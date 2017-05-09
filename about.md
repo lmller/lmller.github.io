@@ -4,9 +4,9 @@ title: About me
 permalink: /about/
 ---
 
-My name Lovis and I'm a Software Developer from Hamburg, Germany.
+I'm Lovis and I write Software.
 
-I work with Android, Java and Kotlin, but I'm also into Game Development with Unity3D.
+I mostly work with Android, Java and Kotlin, but I'm also into Game Development with Unity3D.
 
 I have strong opinions on Agile &ndash;and software development practices in general.
 I always try to uncover new ways of thinking and getting things done.
