@@ -38,24 +38,24 @@ The corresponding (decompiled) java code:
 
 ```java
 public static final void test() {
-      final ObjectRef testVar = new ObjectRef();
-      testVar.element = "Test Variable";
+    final ObjectRef testVar = new ObjectRef();
+    testVar.element = "Test Variable";
 
-      notInlined((Function0)(new Function0(0) {
-         public Object invoke() {
+    notInlined((Function0)(new Function0(0) {
+        public Object invoke() {
             return this.invoke();
-         }
+        }
 
-         @NotNull
-         public final String invoke() {
-            return (String)testVar.element;
-         }
-      }));
+        @NotNull
+        public final String invoke() {
+           return (String)testVar.element;
+        }
+    }));
 
-      //inlined:
-      String var3 = (String)testVar.element;
-      System.out.println(var3);
-   }
+    //inlined:
+    String var3 = (String)testVar.element;
+    System.out.println(var3);
+}
 ```
 
 As I promised, there is no sign of a call to the function called `inlined`. The `notInlined` function is called with a `Function0` anonymous class as its parameter. To obey the contract of the `Function0` interface, the `invoke` method needs to be implemented. Since the interface is generic, an additional method, a so-called _bridge method_<sup>[1](#footnote1)</sup> is generated.  
