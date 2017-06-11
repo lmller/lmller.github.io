@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Kotlin Basics: Inline Functions"
+title: "Gang of Four Patterns in Kotlin"
 date: 2017-06-01 15:00:00
 description: How would common Gang of Four design patterns implemented in Kotlin look like? (from dev.to)
 comments: false
