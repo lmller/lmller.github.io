@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Kotlin Basics: Inline Functions"
-date: 2017-05-19 15:00:00
-description: Kotlin is getting more and more relevant. How would common design patterns implemented in Kotlin look like?
+date: 2017-06-01 15:00:00
+description: How would common Gang of Four design patterns implemented in Kotlin look like? (from dev.to)
 comments: false
 categories:
 - kotlin
