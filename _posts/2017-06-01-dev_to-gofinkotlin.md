@@ -8,7 +8,7 @@ redirect_to: "https://dev.to/lovis/gang-of-four-patterns-in-kotlin"
 categories:
 - kotlin
 - patterns
-permalink: gof-in-kotlin
+
 ---
 Kotlin is getting more and more relevant. How would common design patterns implemented in Kotlin look like? 
 From dev.to, the DEV community.
