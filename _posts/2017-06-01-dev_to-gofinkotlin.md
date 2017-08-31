@@ -12,6 +12,6 @@ categories:
 
 ---
 Kotlin is getting more and more relevant. How would common design patterns implemented in Kotlin look like?  
-From dev.to, the DEV community.
+From dev.to(), the DEV community.
 
-From dev.to => [https://dev.to/lovis/gang-of-four-patterns-in-kotlin](https://dev.to/lovis/gang-of-four-patterns-in-kotlin]) (you should be redirected)
+From dev.to() => [https://dev.to/lovis/gang-of-four-patterns-in-kotlin](https://dev.to/lovis/gang-of-four-patterns-in-kotlin]) (you should be redirected)
