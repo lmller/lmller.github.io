@@ -11,7 +11,7 @@ categories:
 - dev.to
 
 ---
-Kotlin is getting more and more relevant. How would common design patterns implemented in Kotlin look like?  
-From dev.to, the DEV community.
+Implementing the Decorator pattern with function composition and how would the Visitor pattern look like in Kotlin?
+From dev.to(), the DEV community.
 
 From dev.to() => [https://dev.to/lovis/gang-of-four-patterns-in-kotlin---slight-return](https://dev.to/lovis/gang-of-four-patterns-in-kotlin---slight-return]) (you should be redirected)
