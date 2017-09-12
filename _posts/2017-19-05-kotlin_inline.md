@@ -106,7 +106,7 @@ This function will print `kthx bye` if `someValue == 4` and `good bye` otherwise
 inline fun inlined2(block: () -> Unit) = block()
 
 fun test() {
-  notInlined2 {
+  inlined2 {
       if(someValue == 4) {
           print("kthx")
           return
