@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: page
 title: About me
 permalink: /about/
 ---
 
 I'm Lovis and I write Software.
 
-I mostly work with Android, Java and Kotlin, but there was a time when I also was into Game Development with RPGMaker2000 (or more recently Unity3D).
+I mostly work with Android, Java and Kotlin, but there was a time when I also was into game development with RPGMaker2000 (or more recently Unity3D).
 
 I have strong opinions on Agile &ndash;and software development practices in general.
 I always try to uncover new ways of thinking and getting things done.  
