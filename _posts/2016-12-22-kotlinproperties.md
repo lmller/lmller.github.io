@@ -30,7 +30,7 @@ class Banana {
 ```
 
 On the first glance, they seem equivalent. But they aren't.  
-Kotlin has no fields and `color` can therefore not be accessed directly but will be hidden behind `getColor` and `setColor` methods (so called accessor methods). These methods will be hidden if we write pure Kotlin code, but they are still therefor interoperability with java.
+Kotlin has no fields and `color` can therefore not be accessed directly but will be hidden behind `getColor` and `setColor` methods (so called accessor methods). These methods will be hidden if we write pure Kotlin code, but they are still there for interoperability with java.
 
 Accessor methods are generated for us by the Kotlin compiler. But we can write the `getColor` and `setColor` methods ourselves, if we want to.
 
