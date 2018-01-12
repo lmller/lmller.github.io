@@ -92,7 +92,7 @@ println(banana.color)
 
 The `println(banana.color)` will never print `"blue"`. It will call the `get`-function and there fore return `"green"`.
 
-Since we don't want useless backing fields (it's a bit obscur and needs memory) we get rid of the setter by declaring our property as `val`.
+Since we don't want useless backing fields (it's a bit obscure and needs memory) we get rid of the setter by declaring our property as `val`, which means as read-only.
 
 ```kotlin
 class Banana {
