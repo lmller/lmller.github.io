@@ -13,7 +13,8 @@ This is especially true if you originally came from Java, where concepts like [P
 In this post, I will address some of the questions concerning _Properties_ a beginner might have when starting with Kotlin.
 
 ###### Properties and Fields
-Unlike Java, Kotlin *has no fields* (well, technically Kotlin does have firlds, but conceptionally it doesn't).
+Unlike Java, Kotlin *has no fields* (well, technically Kotlin does have fields, but conceptionally it doesn't). 
+
 Consider the two examples:
 
 ```java
@@ -59,11 +60,11 @@ class Banana {
 
 With this, the property (that is, the backing field) will not change unless the new value is either `"yellow"` or `"green"`.
 
-###### "Computed" Properties vs. "Normal" Properties
+###### Read-only Properties vs. "Normal" Properties
 
-As mentioned above, a backing field will not be generated unless we actually use it (be it directly by referencing `field` or indirectly by using a default accessor).  For properties that don't have a backing field, I will borrow the term _computed property_ from [Swift][f22c8840], since it's basically the same concept.
+As mentioned above, a backing field will not be generated unless we actually use it (be it directly by referencing `field` or indirectly by using a default accessor).
 
-Let's change the example a bit so that it's using a computed property.
+Let's change the example a bit so that it's not using a backing field:
 
 ```kotlin
 class Banana {
@@ -91,7 +92,7 @@ println(banana.color)
 
 The `println(banana.color)` will never print `"blue"`. It will call the `get`-function and there fore return `"green"`.
 
-Since we don't want useless backing fields (memory!) we get rid of the setter by declaring our property as `val`.
+Since we don't want useless backing fields (it's a bit obscur and needs memory) we get rid of the setter by declaring our property as `val`.
 
 ```kotlin
 class Banana {
@@ -108,7 +109,7 @@ class Banana {
 
 This `val` property will not offer a `set` method.  
 
-###### "Computed" Properties vs. Functions
+###### Read-only Properties vs. Functions
 
 Writing a computed property like this is essentially the same as writing a function.
 
@@ -130,7 +131,7 @@ I think the [C# explanation on "Choosing Between Properties and Methods"][00a58f
 
   [00a58f3c]: https://msdn.microsoft.com/en-us/library/ms229054(v=vs.100).aspx "C#: "Choosing Between Properties and Methods""
 
-
+The [official style guide also has a section about this](https://kotlinlang.org/docs/reference/coding-conventions.html#functions-vs-properties).
 
 ###### A Possible Pitfall
 
@@ -162,4 +163,4 @@ Some more advanced property topics include [Overriding Properties][27e1d06e] and
   [27e1d06e]: https://kotlinlang.org/docs/reference/properties.html#overriding-properties "Kotlin: Override Properties"
   [ccdf2b54]: https://kotlinlang.org/docs/reference/visibility-modifiers.html "Kotlin: Visibility Modifiers"
 
-  [f22c8840]: https://developer.apple.com/swift/ "Swift"
+
