@@ -111,7 +111,7 @@ This `val` property will not offer a `set` method.
 
 ###### Read-only Properties vs. Functions
 
-Writing a computed property like this is essentially the same as writing a function.
+Writing a property like this is essentially the same as writing a function.
 
 ```kotlin
 class Banana {
