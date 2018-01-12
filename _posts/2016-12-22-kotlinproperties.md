@@ -13,7 +13,7 @@ This is especially true if you originally came from Java, where concepts like [P
 In this post, I will address some of the questions concerning _Properties_ a beginner might have when starting with Kotlin.
 
 ###### Properties and Fields
-Unlike Java, Kotlin *has no fields*.
+Unlike Java, Kotlin *has no fields* (well, technically Kotlin does have firlds, but conceptionally it doesn't).
 Consider the two examples:
 
 ```java
@@ -29,7 +29,7 @@ class Banana {
 ```
 
 On the first glance, they seem equivalent. But they aren't.  
-Kotlin has no fields and `color` can therefore not be accessed directly but will be hidden behind `getColor` and `setColor` methods (so called accessor methods). These methods will be hidden if we write pure Kotlin code, but they are still there for interoperability with java.
+Kotlin has no fields and `color` can therefore not be accessed directly but will be hidden behind `getColor` and `setColor` methods (so called accessor methods). These methods will be hidden if we write pure Kotlin code, but they are still therefor interoperability with java.
 
 Accessor methods are generated for us by the Kotlin compiler. But we can write the `getColor` and `setColor` methods ourselves, if we want to.
 
@@ -116,7 +116,7 @@ Writing a computed property like this is essentially the same as writing a funct
 class Banana {
     var ripeness = 1
 
-    fun getColor: String = when {
+    fun getColor(): String = when {
             ripeness > 80 -> "brown"
             ripeness > 50 -> "yellow"
             else -> "green"
@@ -129,6 +129,8 @@ But I prefer the property syntax. A rule of thumb can be _"if it describes the o
 I think the [C# explanation on "Choosing Between Properties and Methods"][00a58f3c] is useful for Kotlin as well.
 
   [00a58f3c]: https://msdn.microsoft.com/en-us/library/ms229054(v=vs.100).aspx "C#: "Choosing Between Properties and Methods""
+
+
 
 ###### A Possible Pitfall
 
