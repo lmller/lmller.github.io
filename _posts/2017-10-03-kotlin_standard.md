@@ -206,7 +206,7 @@ The last two functions I want to mention have also been added to Kotlin with 1.1
 For example:
 
 ```kotlin
-val redApple = apple.takeIf { it.color != RED }
+val redApple = apple.takeIf { it.color == RED }
 val otherApple = apple.takeUnless { it.color == RED }
 ```
 
