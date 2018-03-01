@@ -14,7 +14,7 @@ I have strong opinions on Agile &ndash;and software development practices in gen
 I always try to uncover new ways of thinking and getting things done.  
 That's also why I like and encourage never-ending discussions on how and why software development is fundamentally broken.
 
-
+I'm also the organizer of the [Kotlin Usergroup Hamburg](https://www.meetup.com/de-DE/Kotlin-User-Group-Hamburg/)
 
 <a href="https://twitter.com/lovisbrot" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @lovisbrot</a>
 
