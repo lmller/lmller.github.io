@@ -6,8 +6,7 @@ description: Mocking frameworks are powerful tools for testing and test driven d
 comments: false
 redirect_to: "https://blog.codecentric.de/en/2018/03/mock-what-when-how/"
 categories:
-- tdd
-- testing
+- tests
 - codecentric
 - kotlin
 
