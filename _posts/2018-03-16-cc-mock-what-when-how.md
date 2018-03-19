@@ -10,7 +10,6 @@ categories:
 - testing
 - codecentric
 - kotlin
-- dev.to
 
 ---
 Mocking frameworks are powerful tools for testing and test driven development (TDD) in particular.  
