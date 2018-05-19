@@ -25,7 +25,7 @@ harmony:
     url: https://lmller.github.io
 
   # Google Analytics key, leave blank to ignore
-  google_analytics_key: UA-114322236-1
+  google_analytics_key: 
 
   # Profile links, leave blank to ignore
   social:
