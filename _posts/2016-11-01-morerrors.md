@@ -3,7 +3,7 @@ layout: post
 title:  Increase the Java compiler's error-limit in Gradle.
 date:   2016-11-01 15:00:00
 description: Quick guide on how to increase the number of displayed errors in the gradle console.
-comments: true
+comments: false
 categories:
 - android
 - gradle
