@@ -3,7 +3,7 @@ layout: post
 title:  "Kotlin Basics: Standard Extension Functions"
 date:   2017-03-10 15:00:00
 description: What's the difference between the kotlin extension functions in Standard.kt? When to use let, apply, run, takeUnless or also?
-comments: true
+comments: false
 categories:
 - kotlin
 permalink: kotlin-standard-extensions
