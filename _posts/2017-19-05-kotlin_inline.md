@@ -3,7 +3,7 @@ layout: post
 title: "Kotlin Basics: Inline Functions"
 date: 2017-05-19 15:00:00
 description: What is the purpose of the "inline" keyword in Kotlin? Is it helpful for Android development?
-comments: true
+comments: false
 categories:
 - kotlin
 - android
