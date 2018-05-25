@@ -3,7 +3,7 @@ layout: post
 title:  "Kotlin Basics: Properties"
 date:   2016-12-22 15:00:00
 description: Kotlin offers different methods to access an object's attribute. Properties, functions or computed properties; which should you choose?
-comments: true
+comments: false
 categories:
 - kotlin
 permalink: kotlin-properties-vs-functions
