@@ -3,7 +3,9 @@ layout: page
 title: About me
 permalink: /about/
 ---
-![Lovis](assets/Lovis_Moeller_small.png)![KUG HH Logo](https://secure.meetupstatic.com/photos/event/c/e/5/1/highres_462532817.jpeg)
+
+
+| ![Lovis](assets/Lovis_Moeller_small.png)! | [KUG HH Logo](https://secure.meetupstatic.com/photos/event/c/e/5/1/highres_462532817.jpeg) |
 
 I'm Lovis and I write Software.
 
