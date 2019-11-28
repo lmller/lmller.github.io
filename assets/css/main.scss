@@ -395,7 +395,7 @@ div.page-content {
       li {
         @include font-size(16px);
         line-height: 1.5;
-        background-position: 0 7px;
+        background-position: 0 0.5em;
       }
     }
   }
@@ -416,7 +416,7 @@ div.page-content {
       @include font-size(16px);
       li {
         line-height: 1.5;
-        background-position: 0 7px;
+        background-position: 0 0.5em;
       }
     }
   }
@@ -473,9 +473,9 @@ div.page-content {
   color: $color-2;
   line-height: 1.6;
   background-repeat: no-repeat;
-  background-position: 0 6px;
+  background-position: 0 0.5em;
   padding: 0 0 5px 15px;
-  margin-left: 0;
+  margin-left: 10px;
 }
 
 // Theme base 01
