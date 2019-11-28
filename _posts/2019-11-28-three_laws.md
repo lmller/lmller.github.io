@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Three laws of Software Projects"
-date:   2019-11-28 12:00:00
+date:   2019-11-28 08:00:00
 description: My three laws of software projects. Happen all the time.
 comments: false
 categories:
-- meta
+- software development
 permalink: three-laws
 ---
 
