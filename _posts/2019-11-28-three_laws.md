@@ -9,7 +9,7 @@ categories:
 permalink: three-laws
 ---
 
-During my years in the industry, I noticed some common aspects of software development projects.
+Here are some aspects that all software projects have in common. 
 
 #### First law:
 Every project will at one point in time discuss story slicing / feature releases without at least _trying_ to follow best practices
