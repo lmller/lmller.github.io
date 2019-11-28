@@ -12,7 +12,7 @@ permalink: three-laws
 Here are some aspects that all software projects have in common. 
 
 #### First law:
-Every project will at one point in time discuss story slicing / feature releases without at least _trying_ to follow best practices
+Every project will at one point in time discuss story slicing / feature releases without at least _trying_ to follow best practices.
 
 #### Second law:
 It’s inevitable that someone proposes 
@@ -24,4 +24,4 @@ It’s inevitable that someone proposes
 as a solution to that problem.
 
 #### Third law:
-All projects are the same, yet all projects think they’re special
+All projects are the same, yet all projects think they’re special.
