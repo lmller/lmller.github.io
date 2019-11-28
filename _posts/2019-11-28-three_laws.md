@@ -9,10 +9,12 @@ categories:
 permalink: three-laws
 ---
 
-### First law:
+My three laws of software projects.
+
+#### First law:
 Every project will at one point in time discuss story slicing / feature releases without at least _trying_ to follow best practices
 
-### Second law:
+#### Second law:
 It’s inevitable that someone proposes 
 - estimates,
 - feature brachnes,
@@ -21,5 +23,5 @@ It’s inevitable that someone proposes
 
 as a solution to that problem.
 
-### Third law:
+#### Third law:
 All projects are the same, yet all projects think they’re special
