@@ -4,39 +4,22 @@
 baseurl:
 
 # Site live URL
-url: https://lmller.github.io
+url: https://cargocult.dev
 
 # Localhost
 # url: http://127.0.0.1:4000
 
-# Harmony theme configuration. Please change accordingly.
-harmony:
+theme: plainwhite
+
+plainwhite:
   name: Lovis Möller
-  # Little description about your site
-  description: On Software Development.
-  # 'meta_description:' Write an awesome description for your new site here.
-  # It will appear in your document head meta (for Google search results) and
-  # in your feed.xml site description.
-  meta_description: Lovis' blog on software development.
-  basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
-  author: # Author details
-    name: Lovis Möller
-    email:
-    url: https://lmller.github.io
+  tagline: Cargo-Cult Developer
+  date_format: "%b %-d, %Y"
 
-  # Google Analytics key, leave blank to ignore
-  google_analytics_key: 
-
-  # Profile links, leave blank to ignore
-  social:
-    github: lmller
+  social_links:
     twitter: lovisbrot
-    facebook:
-    gplus:
-    stackex: l-möller
-    pinterest:
-  # Toggle disclaimer in footer
-  show_disclaimer: true
+    github: lmller
+    linkedIn:  # format: locale/username
 
 # Conversion / Build settings
 markdown:    kramdown
