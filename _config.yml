@@ -21,6 +21,8 @@ plainwhite:
     github: lmller
     linkedIn:  # format: locale/username
 
+show_excerpts: true
+
 # Conversion / Build settings
 markdown:    kramdown
 # This is how you put pygments config in jekyll 2.0 instead of pygments: true
