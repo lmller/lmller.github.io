@@ -1,4 +1,3 @@
-@import "ext/fonts";
 @import "ext/normalize";
 @import "syntax";
 
@@ -145,6 +144,12 @@ main {
       padding: 0px 8px;
     }
   }
+}
+
+i {
+ .fa {
+   padding: 2px
+ }
 }
 
 .post-wrapper {
