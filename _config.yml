@@ -9,7 +9,6 @@ url: https://cargocult.dev
 # Localhost
 # url: http://127.0.0.1:4000
 
-theme: plainwhite
 title: Cargo Cult Programmer
 plainwhite:
   name: Lovis Möller
