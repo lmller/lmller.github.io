@@ -10,10 +10,10 @@ url: https://cargocult.dev
 # url: http://127.0.0.1:4000
 
 theme: plainwhite
-
+title: Cargo Cult Programmer
 plainwhite:
   name: Lovis Möller
-  tagline: Cargo-Cult Developer
+  tagline: CARGO CULT PROGRAMMER
   date_format: "%b %-d, %Y"
 
   social_links:
@@ -21,7 +21,7 @@ plainwhite:
     github: lmller
     linkedIn:  # format: locale/username
 
-show_excerpts: true
+show_excerpts: false
 
 # Conversion / Build settings
 markdown:    kramdown
@@ -42,8 +42,8 @@ exclude:
 
 # Sass conversion configs
 sass:
-    sass_dir: assets/css/_sass
-    style: :compressed
+  sass_dir: _sass
+  style: :compressed
 
 gems:
   - jekyll-redirect-from

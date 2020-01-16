@@ -1,0 +1,20 @@
+---
+layout: default
+title: Blog archive - Lovis Möller
+---
+<div class="post-container">
+<div class="post">
+  <h1 id="posts-label">Blog Archive</h1>  
+  <div class="post">
+  {% for post in site.posts %}
+  	{% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
+  	{% if currentyear != year %}
+    	{% unless forloop.first %}</ul>{% endunless %}
+    		<h5>{{ currentyear }}</h5>
+    		<ul>
+    		{% capture year %}{{currentyear}}{% endcapture %}
+  		{% endif %}
+    <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+{% endfor %}
+</div>
+</div>
