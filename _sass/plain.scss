@@ -93,15 +93,13 @@ main {
     align-items: center;
     h2 {
       font-size: 22px;
-      margin-top: 25px;
-      margin-bottom: 0;
+      margin-bottom: 10px;
       color: #222222;
       font-weight: normal;
     }
     .tagline {
       font-family: 'Monoton', sans-serif;
       font-size: 18px;
-      margin-top: 12px;
       color: #444;
       white-space: pre-wrap;
       line-height: normal;
@@ -111,6 +109,7 @@ main {
     img {
       max-width: 150px;
       border-radius: 50%;
+
     }
     .smallnav {
       font-size: 12px;
