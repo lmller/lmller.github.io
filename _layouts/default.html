@@ -4,46 +4,48 @@
     {%- include head.html -%}
   </head>
   <body>
-    <section class="top">
-      <ul class="social">
 
-        <a href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}">
-          <li>
-            <i class="fa fa-twitter"></i>
-          </li>
-        </a>
-
-        <a href="https://github.com/{{ site.plainwhite.social_links.github }}">
-            <li>
-              <i class="fa fa-github"></i>
-            </li>
-          </a>
-
-        <a href="https://www.xing.com/profile/Lovis_Moeller/">
-            <li>
-              <i class="fa fa-xing"></i>
-            </li>
-          </a>
-
-        <a href="{{ '/about' | prepend: site.baseurl | prepend: site.url }}">
-            <li>
-              <i class="fa fa-info-circle"></i>
-            </li>
-          </a>
-
-
-      </ul>
-      <ul class="smallnav">
-        <li><a href="{{ '/archive' | prepend: site.baseurl | prepend: site.url }}">Blog Archive</a></li>
-        <li>&dash;</li>
-        <li><a href="{{ '/imprint' | prepend: site.baseurl | prepend: site.url }}">Imprint</a></li>
-
-      </ul>
-      <p>
-        &copy; {{ "now" | date: "%Y" }}
-      </p>
-    </section>
     <main class="container">
+      <section class="top">
+        <ul class="social">
+  
+          <a href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}">
+            <li>
+              <i class="fa fa-twitter"></i>
+            </li>
+          </a>
+  
+          <a href="https://github.com/{{ site.plainwhite.social_links.github }}">
+              <li>
+                <i class="fa fa-github"></i>
+              </li>
+            </a>
+  
+          <a href="https://www.xing.com/profile/Lovis_Moeller/">
+              <li>
+                <i class="fa fa-xing"></i>
+              </li>
+            </a>
+  
+          <a href="{{ '/about' | prepend: site.baseurl | prepend: site.url }}">
+              <li>
+                <i class="fa fa-info-circle"></i>
+              </li>
+            </a>
+  
+  
+        </ul>
+        <ul class="smallnav">
+          <li><a href="{{ '/archive' | prepend: site.baseurl | prepend: site.url }}">Blog Archive</a></li>
+          <li>&dash;</li>
+          <li><a href="{{ '/imprint' | prepend: site.baseurl | prepend: site.url }}">Imprint</a></li>
+  
+        </ul>
+        <p>
+          &copy; {{ "now" | date: "%Y" }}
+        </p>
+      </section>
+      <section class="site">
       <section class="about">
         <div class="tagline"><a href="/"></a>CARGO CULT <br/>PROGRAMMER</a></div>
       
@@ -51,7 +53,7 @@
       <section class="content">
         {{ content }}
       </section>
-     
+    </section>
     </main>
   </body>
 </html>
