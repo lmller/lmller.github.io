@@ -41,14 +41,10 @@ h2 {
   margin: 0.7em 0;
 }
 main {
-  margin: 0 90px;
+  margin: 0 90px 0 0;
   display: flex;
   height: 100%;
 
-  @media screen and (min-width: $bigScreenW) {
-    margin: 0 auto;
-    max-width: 1440px;
-  }
   @media screen and (max-width: 1280px) {
     margin: 0 35px;
   }
@@ -66,15 +62,13 @@ main {
 
   .content {
     @media screen and (min-width: $mobileW + 1) {
-      max-width: calc(100% - #{$leftWidth});
-      margin-left: calc(#{$leftWidth} * 1.1);
       width: 100%;
+      margin-left: -100px;
     }
   }
   .about {
     display: flex;
     height: 100vh;
-    padding-bottom: 15vh;
     @media screen and (max-width: $mobileW) {
       height: auto;
       padding: 10vh 0;
@@ -99,13 +93,12 @@ main {
     }
     .tagline {
       font-family: 'Monoton', sans-serif;
-      font-size: 18px;
       color: #444;
       white-space: pre-wrap;
-      line-height: normal;
-      background-color: white;
-      margin-top: -44px;
-      margin-bottom: 30px;
+      line-height: 1em;
+
+      transform: rotate(-90deg);
+      font-size: 10vh;
     }
     img {
       max-width: 150px;
