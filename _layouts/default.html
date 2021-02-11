@@ -39,11 +39,10 @@
           <li><a href="{{ '/archive' | prepend: site.baseurl | prepend: site.url }}">Blog Archive</a></li>
           <li>&dash;</li>
           <li><a href="{{ '/imprint' | prepend: site.baseurl | prepend: site.url }}">Imprint</a></li>
-  
         </ul>
-        <p>
-          &copy; {{ "now" | date: "%Y" }}
-        </p>
+   
+         
+        
       </section>
       <section class="site">
       <section class="about">
@@ -54,6 +53,7 @@
         {{ content }}
       </section>
     </section>
+    <span>&copy; {{ "now" | date: "%Y" }} Lovis Möller</span>
     </main>
   </body>
 </html>
