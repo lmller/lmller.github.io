@@ -42,6 +42,10 @@ h2 {
 }
 main {
   margin: 0 90px 0 0;
+  @media screen and (max-width: $mobileW) {
+    margin: 0;
+    padding: 4px;
+  }
   display: flex;
   height: 100%;
   flex-direction: column;
@@ -118,8 +122,11 @@ main {
     color: #444;
     white-space: pre-wrap;
     line-height: 1em;
+   
+    @media screen and (min-width: $mobileW+1) {
+      transform: rotate(-90deg);
+    }
 
-    transform: rotate(-90deg);
     font-size: 10vh;
   }
   img {
