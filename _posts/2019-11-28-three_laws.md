@@ -17,7 +17,7 @@ Every project will at one point in time discuss story slicing / feature releases
 #### Second law:
 It’s inevitable that someone proposes 
 - estimates,
-- feature brachnes,
+- feature branches,
 - late merges to master or
 - all of the above
 
