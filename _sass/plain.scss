@@ -216,6 +216,7 @@ i {
 }
 .posts,
 .post-container {
+  background-color: white;
   list-style-type: none;
   @media screen and (max-width: $smallMobileW) {
     margin-left: 20px;
