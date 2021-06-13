@@ -14,7 +14,7 @@ $leftWidth: 256px;
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-size: 16px;
   line-height: 1.2em;
   margin: 0;
@@ -45,6 +45,7 @@ main {
   @media screen and (max-width: $mobileW) {
     margin: 0;
     padding: 4px;
+    overflow-x: hidden;
   }
   display: flex;
   height: 100%;
@@ -228,13 +229,15 @@ i {
   }
 }
 .post-container {
-  padding-left: 30px;
+  margin: 50px;
+  @media screen and (max-width: $mobileW) {
+    margin: 20px;
+  }
 }
 .post {
-  font-family: "Merriweather", sans-serif;
-  font-weight: 300;
+  font-family: "Crete Round", serif;
   color: #222;
-  line-height: 1.9em;
+  line-height: 1.2em;
   a {
     color: $linkColor;
     text-decoration: none;
@@ -249,7 +252,7 @@ i {
   h4,
   h5,
   h6 {
-    font-family: Raleway, sans-serif;
+    font-family: 'Crete Round', serif;
   }
 }
 

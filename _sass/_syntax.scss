@@ -7,8 +7,15 @@
 div.highlight {
 	padding: 5px 20px;
 }
-pre.highlight, code {
-	font-family: 'Consolas', Menlo, monospace;
+code {
+	font-family: 'Source Code Pro', Menlo, monospace;
+	background-color: #f4f4f4;
+}
+.highlight code {
+	background: none;
+}
+pre.highlight {
+	font-family: 'Source Code Pro', Menlo, monospace;
 	line-height: 1.4em;
 	tab-size: 4;
 }
