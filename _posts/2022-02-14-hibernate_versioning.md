@@ -8,7 +8,7 @@ categories:
 - software development
 - hibernate
 - spring
-permalink: three-laws
+permalink: hibernate-versioning
 ---
 
 Today, I opened our error logs and was welcomed by 101 brand new exceptions on our production system. 😱  
@@ -16,7 +16,7 @@ Surprise exceptions on prod? You can probably imagine my terror.
 
 As usual, I checked out the stacktrace. What should I say - I was a bit puzzled.
 
-```java
+```
 Unexpected exception with 'Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction'
 org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
 	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:571)
@@ -42,7 +42,7 @@ Luckily, there was a small hint. It had something to do with a `NullPointerExcep
 
 I went looking for the cause. Why did this suddenly happen? Why did it not happen in the development environment? What code change caused this issue? I was recently working on this class and did some changes on repositories, but these changes had been deployed for weeks. So my changes probably weren't the issue here. I went back and checked the exception cause again. Ok, `Versioning` was the culprit.  
 The entity that's modified here is the representation of one of our robots. It has a `version` field annotated with `@Versioned`. Is versioning suddenly broken? Did we update hibernate to a newer version? And if so, why a `NullPointerException at org.hibernate.type.LongType.next`? The `next`-function looks like this:
-```java
+```
 public Long next(Long current, SharedSessionContractImplementor session) {
 	return current + 1L;
 }
